@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Mondae — Privacy Policy</title>
+<title>Mondae: Privacy Policy</title>
 <style>
   body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
          max-width: 720px; margin: 0 auto; padding: 2rem 1.25rem 4rem; color: #1f2122; line-height: 1.6; }
@@ -12,8 +12,8 @@
 </style>
 </head>
 <body>
-<h1>Mondae — Privacy Policy</h1>
-<!-- DRAFT for Mike's review (2026-09-08): rewritten for messaging over Linq, AI processing, receipts, and payments. Replace the effective date before publishing. -->
+<h1>Mondae: Privacy Policy</h1>
+<!-- DRAFT for Mike's review (2026-10-06, replacing the 2026-09-08 draft): what the product keeps now (the reading log, the operator's subscription, site visit tags, the deletion rule, document links), two false provider claims removed. Not legal advice: a lawyer reads this before it is published. Replace the effective date before publishing. -->
 <p class="muted">Effective date: [DATE], replacing the September 1, 2026 version</p>
 
 <p>Mondae ("we," "us") is a text-message-based business assistant operated by
@@ -22,9 +22,14 @@ how we handle information for businesses that use Mondae and for their customers
 
 <h2>Information we collect</h2>
 <p><strong>From businesses:</strong> the owner's name, mobile phone number, the contents of
-messages sent to and from Mondae, photos texted to Mondae (such as receipts), and the
-business records created through the service at the owner's request: customers' names and
-phone numbers, estimates, invoices, payments, and receipts.</p>
+messages sent to and from Mondae, photos texted to Mondae (such as receipts), the business
+records created through the service at the owner's request (customers' names and phone
+numbers, estimates, invoices, payments, and receipts), and the owner's Mondae subscription
+status and the last four digits of the card on file (the card itself stays with Stripe).</p>
+<p><strong>From visits to mondae.app:</strong> when a visit comes from an ad or a partner's
+link, we record the link's tags so we know where a signup came from. We do not record a
+visitor's IP address or browser details unless we are reporting signups to an ad platform,
+and this policy will say so before we do. Visit records are deleted after 90 days.</p>
 <p><strong>From a business's customers:</strong> the name and phone number the business gave
 us for a job, and the contents of messages exchanged with the business through Mondae.
 We collect nothing else about customers and we do not look them up elsewhere.</p>
@@ -40,16 +45,19 @@ Opt-in data and consent will not be shared with any third parties.</p>
 messages, preparing business documents, carrying messages between a business and its
 customers at the business's request, sending service-related notifications, recording
 payments and receipts, and producing summaries and reports for the business. Message
-contents are processed by an artificial-intelligence provider to understand requests and
-read receipt photos; that provider does not use Mondae's data to train its models.</p>
+contents, including every message a business sends Mondae, are read by a language-model
+provider on our behalf to understand requests and read receipt photos; that provider does
+not use Mondae's data to train its models. A record of each reading is kept with the message
+so we can check and improve how Mondae understood it.</p>
 
 <h2>Service providers</h2>
-<p>We use service providers only as needed to operate the service: a messaging provider
-that delivers messages over iMessage, RCS, and SMS (SOC 2 Type II certified; iMessage
-traffic is end-to-end encrypted in transit), an artificial-intelligence provider, a database
-and file-storage provider, a hosting provider, and, where a business offers card payment,
-Stripe, which processes payments on the business's own Stripe account. Card numbers are
+<p>We use service providers only as needed to operate the service: a messaging provider that
+delivers messages over iMessage, RCS, and SMS; a language-model provider that reads messages
+and receipt photos on our behalf and does not use Mondae's data to train its models; a database
+and file-storage provider; a hosting provider; and Stripe, which processes customer payments on
+the business's own Stripe account and the business's own Mondae subscription. Card numbers are
 entered on Stripe's pages and never reach Mondae.</p>
+<!-- DRAFT NOTE (2026-10-06): the earlier draft said the messaging provider was "SOC 2 Type II certified" and that iMessage traffic was "end-to-end encrypted in transit". Neither claim is ours to make: the provider delivers messages through its own devices and reads them to do so. Removed. "Artificial-intelligence provider" became "language-model provider" (no "AI" in Mondae's words, Mike 2026-09-27); the lawyer decides whether the processor must be named. -->
 
 <h2>Text messaging disclosures</h2>
 <ul>
@@ -60,9 +68,12 @@ entered on Stripe's pages and never reach Mondae.</p>
 </ul>
 
 <h2>Data retention and security</h2>
-<p>We keep our own copy of messages and business records for as long as needed to provide
-the service and meet legal obligations; our messaging provider retains message contents
-only briefly to deliver them. Access to data is restricted, data is encrypted at rest by
+<p>We keep our own copy of messages and business records while a business uses the service,
+and delete it thirty days after the business's account ends, except what tax or legal
+obligations require us to keep; our messaging provider retains message contents only briefly
+to deliver them. Links to a business's documents and reports stay valid while the account is
+open so the business and its bookkeeper can reach them; the business can ask us to revoke a
+link at any time. Access to data is restricted, data is encrypted at rest by
 our providers, and passwords and credentials are never stored in plain text.</p>
 
 <h2>Your choices</h2>
